@@ -7,7 +7,7 @@ class PassengerComplaintSerializer(serializers.ModelSerializer):
         model = PassengerComplaint
         fields = '__all__'
 
-    # -------- Field-Level Validation --------
+ 
     def validate_user_phone_number(self, value):
         if not value.isdigit() or len(value) not in [10, 11, 12, 13, 14, 15]:
             raise serializers.ValidationError("Enter a valid phone number.")
@@ -28,7 +28,7 @@ class PassengerComplaintSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Start date of journey cannot be in the past.")
         return value
 
-    # -------- Object-Level Validation --------
+    
     def validate(self, attrs):
         if attrs.get('coach') and not attrs.get('berth'):
             raise serializers.ValidationError("If coach is provided, berth must also be provided.")

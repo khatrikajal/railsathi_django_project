@@ -21,7 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'items',
-    'rest_framework',  # ✅ Added Django REST Framework
+    'rest_framework', 
 ]
 
 # --------------------
@@ -45,7 +45,7 @@ ROOT_URLCONF = 'railsathi.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "templates")],  # ✅ Global templates
+        'DIRS': [os.path.join(BASE_DIR, "templates")],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,7 +87,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # --------------------
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'Asia/Kolkata'  # ✅ Set to India time
+TIME_ZONE = 'Asia/Kolkata'
 USE_I18N = True
 USE_TZ = True
 
@@ -96,7 +96,7 @@ USE_TZ = True
 # --------------------
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [  # ✅ Static directory outside app
+STATICFILES_DIRS = [ 
     os.path.join(BASE_DIR, "static")
 ]
 
