@@ -118,7 +118,7 @@ railsathi/
 ├── .env
 ```
 
-feat: Complete Dockerized Django project with PostgreSQL, complaint form API, and email notification
+Complete Dockerized Django project with PostgreSQL, complaint form API, and email notification
 
 - Added PassengerComplaint model with full field validation
 - Integrated DRF for complaint submission API
