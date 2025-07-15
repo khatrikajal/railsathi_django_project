@@ -1,4 +1,4 @@
-# 🚆 RailSathi - Passenger Complaint API
+# 🚆 Dockerize RailSathi - Passenger Complaint API
 
 This project is a backend service built using Django and Docker. It allows passengers to submit complaints which are saved to a PostgreSQL database and also emailed to the support team. The project is containerized with Docker and uses environment variables for configuration.
 
